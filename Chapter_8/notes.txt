@@ -1,0 +1,6 @@
+There are two kinds of properties
+Data properties
+Accessor Properties
+
+Data properties contain a single location for a data value
+attributes can seemingly mean charrecteristics
