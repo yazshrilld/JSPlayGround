@@ -61,17 +61,19 @@
 // // console.log(exam.year_);
 // console.log(exam.subject);
 
-//Merging Obects
+// Merging Obects
 // let place, store, result;
+// result = {},
 // place = {};
 // store = {
 //     id:"src",
+//     ball:"soccer",
 // }
 
 // result = Object.assign(place,store); //there is order of preference here, it takes the first arguement as identical (===) 
-// console.log(result);
-// console.log(place);
-// console.log(store);
+// console.log(result.ball);
+// console.log(store.ball);
+// // console.log(store);
 // console.log(result === store);
 
 // let spoon, shoe, glass, res;
@@ -130,17 +132,47 @@
 
 //Nested Destructuring
 //Partial Destructuring Completion
-let mySchool, myFood, mySubject;
-let yazid = {
-    school: 'ECLC',
-    totalSubject: 19
-};
+// let mySchool, myFood, mySubject;
+// let yazid = {
+//     school: 'ECLC',
+//     totalSubject: 19
+// };
 
 
-try {
-    ({ school: mySchool, totalSubject: mySubject, food: { rice: myFood } } = yazid);
-} catch (error) {
+// try {
+//     ({ school: mySchool, totalSubject: mySubject, food: { rice: myFood } } = yazid);
+// } catch (error) {
 
-}
-console.log(mySchool, mySubject, myFood);
+// }
+// console.log(mySchool, mySubject, myFood);
+
+//TASK-1{Pass and Copy all properties in one object to another object}
+
+// let games, coach, clubs;
+// games = {},
+// coach = {
+//     klopp:"premier league",
+//     morinho:"la liga",
+//     anceloti:"dutch",
+// };
+// clubs = {
+//     england:"liverpool",
+//     spain:"barcelona",
+//     germany:"dortmund",
+//     turkey:"besiktas",
+//     brazil:"santos",
+// }
+
+// games = Object.assign(coach,clubs); //there is order of preference here, it takes the first arguement as identical (===) 
+// console.log(games);
+// console.log(games.germany);
+// // console.log(store.ball);
+// // console.log(store);
+// console.log(games === coach);
+
+//filter some values
+// const filteredGames = Object.keys(games).filter(key => {
+//     key.includes("spain")
+// });
+
 
